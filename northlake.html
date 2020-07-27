@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Business Frontpage - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Avondale Health Services (555) 018-8000</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 Locations
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Northlake</a>
+                  <a class="dropdown-item" href="#">Tucker</a>
+                  <a class="dropdown-item" href="#">Decatur</a>
+               </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">AVONDALE HEALTH SERVICES</h1>
+          <p class="lead mb-5 text-white-50">AHS Personal Care Homes are beautifully appointed, comfortable facilities in residential neighborhoods. They are not only specially designed to meet all federal and state codes, but they also provide safety, security and a relaxing social environment</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG1-300x200.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG2-300x200.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG3-300x200.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG4-300x200.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG5-300x200.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG6-300x200.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG1-600x400.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG2-600x400.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG3-600x400.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG4-600x400.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG5-600x400.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG6-600x400.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+  <div class="row">	
+   <div class="gallery">
+    <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG1-150x100.jpg" onclick="currentSlide(1)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG2-150x100.jpg" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG3-150x100.jpg" onclick="currentSlide(3)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG4-150x100.jpg" onclick="currentSlide(4)" alt="">
+    </div>
+	
+	 <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG5-150x100.jpg" onclick="currentSlide(5)" alt="">
+    </div>
+	
+	 <div class="column">
+      <img class="demo" src="file:///C:/Users/mikerod801/Pictures/Capstone%20images/IMG6-150x100.jpg" onclick="currentSlide(6)" alt="">
+    </div>
+	</div>
+  </div>	
+	
+  </div>
+</div>
+	
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+	  <div class="row">
+	     <div class="col-md-4">
+            <p class="m-0 text-left text-white">Copyright &copy; Avondale Health Services 2020</p>
+	     <div>
+       <div>		 
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="vendor/bootstrap/js/custom_script_1.js"></script>
+
+</body>
+
+</html>
